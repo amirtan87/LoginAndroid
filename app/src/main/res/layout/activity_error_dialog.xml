@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="280dp"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	tools:context="in.parsel.pvr.ui.activities.ErrorDialogActivity">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:background="@color/white"
+			android:layout_height="wrap_content">
+			<ImageView
+				android:id="@+id/imgPlaceHolder"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="10dp"
+				android:layout_centerHorizontal="true"
+				/>
+			<RelativeLayout
+				android:id="@+id/relTitle"
+				android:layout_below="@+id/imgPlaceHolder"
+				android:layout_width="fill_parent"
+				android:layout_height="30dip"
+				android:visibility="visible">
+				<TextView
+					android:id="@+id/Tv1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:textSize="20sp"
+					android:background="@android:color/transparent"
+					android:layout_marginLeft="10dp"
+					android:textColor="@android:color/black"
+					/>
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/relMessage"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@android:color/transparent"
+				android:layout_below="@+id/relTitle"
+				>
+				<TextView
+					android:id="@+id/Tv2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="14sp"
+					android:background="@android:color/transparent"
+					android:textColor="@android:color/black"
+					android:layout_centerHorizontal="true"
+					android:layout_marginLeft="35dp"
+					android:layout_marginTop="20dp"
+					android:layout_marginBottom="20dp"
+					/>
+			</RelativeLayout>
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="2dp"
+				android:layout_below="@+id/relMessage"
+				></View>
+
+
+			<RelativeLayout
+				android:id="@+id/relButtons"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_below="@+id/relMessage"
+				>
+				<Button
+					android:id="@+id/Btn1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+
+					android:layout_centerHorizontal="true"
+
+					/>
+			</RelativeLayout>
+		</RelativeLayout>
+	</ScrollView>
+</RelativeLayout>

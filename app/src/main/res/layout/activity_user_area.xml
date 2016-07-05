@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_area"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.parsel.pvr.ui.activities.UserAreaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="25dp"
+        android:id="@+id/tvWelcomeMsg" />
+
+    <TextView
+        android:text="Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        app:layout_constraintLeft_toLeftOf="@+id/tvWelcomeMsg"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcomeMsg"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="name"
+        android:ems="10"
+        tools:layout_editor_absoluteY="101dp"
+        android:id="@+id/etUsername"
+        app:layout_constraintLeft_toLeftOf="@+id/tvWelcomeMsg" />
+
+    <TextView
+        android:text="Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="158dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView2" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="address"
+        android:ems="10"
+        android:id="@+id/etAddress"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <TextView
+        android:text="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_user_area"
+        app:layout_constraintTop_toBottomOf="@+id/etAddress"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:text="Password"
+        android:ems="10"
+        android:id="@id/etPassword"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

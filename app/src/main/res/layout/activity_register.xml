@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.parsel.pvr.ui.activities.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etName"
+        android:hint="Name"
+        android:selectAllOnFocus="true"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_register"
+        app:layout_constraintRight_toRightOf="@+id/activity_register"
+        app:layout_constraintBottom_toTopOf="@+id/etUsername"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etUsername"
+        android:hint="Username"
+        tools:layout_editor_absoluteY="66dp"
+        app:layout_constraintRight_toRightOf="@+id/etName" />
+
+    <EditText
+        android:layout_width="426dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPassword"
+        android:hint="Password"
+        tools:layout_editor_absoluteY="66dp"
+        app:layout_constraintRight_toRightOf="@+id/etUsername" />
+
+
+    <EditText
+        android:layout_width="352dp"
+        android:layout_height="42dp"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/etAddress"
+        android:hint="Address"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_register"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        android:layout_marginTop="16dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_register"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <Button
+        android:text="Register"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bRegister"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_register"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        android:layout_marginTop="48dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
